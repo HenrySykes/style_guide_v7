@@ -1,6 +1,7 @@
 /* ============================================= */
 /*              Buttons                          */
 /* ============================================= */
+
 .btn {
     margin-top: 15px;
     width: 100%;
@@ -12,11 +13,11 @@
   }
   
   .default {
-    background-color: #51ddfc;
+    background-color: $default-color;
   }
   
   .error {
-    background-color: #e4757a;
+    background-color: $error-color;
   }
   
   .info {
@@ -28,6 +29,6 @@
   }
   
   .warning {
-    background-color: #fd7856;
+    background-color: $warning-color;
   }
   

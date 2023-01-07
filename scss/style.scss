@@ -1,51 +1,11 @@
+// Partial imports
 
-/* ============================================= */
-/*              Base styles                      */
-/* ============================================= */
+@import 'base/index';
 
-* {
-  font-family: 'Lato', sans-serif;
-  color: #777;
-  box-sizing: border-box;
-}
+@import 'component/index';
 
-p {
-  line-height: 1.45em;
-}
+@import 'utilities/index';
 
-a {
-  text-decoration: none;
-}
-
-
-/* ============================================= */
-/*              Typography                       */
-/* ============================================= */
-
-.headline-primary {
-  color: #58e1c1;
-  margin-left: 10px;
-}
-
-.headline-secondary {
-  font-weight: 300;
-  color: #777;
-}
-
-.link {
-  color: #51ddfc;
-  font-weight: 700;
-}
-
-.blockquote {
-  font-size: 1.5em;
-  font-weight: 300;
-  font-style: italic;
-  margin-left: 20px;
-  padding-left: 20px;
-  border-left: 8px solid #58e1c1;
-  border-radius: 5px;
-}
 
 
 /* ============================================= */
@@ -75,7 +35,7 @@ a {
 }
 
 .theme.col-2 {
-  background-color: #fd7856;
+  background-color: $warning-color;
 }
 
 .theme.col-3 {
@@ -103,7 +63,7 @@ a {
 }
 
 .theme.col-9 {
-  background-color: #e4757a;
+  background-color: $error-color;
 }
 
 .theme.col-10 {
@@ -111,7 +71,7 @@ a {
 }
 
 .theme.col-11 {
-  background-color: #51ddfc;
+  background-color: $default-color;
 }
 
 .theme.col-12 {
@@ -147,7 +107,7 @@ a {
 
 .nav-link:hover {
   color: #fff;
-  background-color: #58e1c1;
+  background-color: $primary-color;
 }
 
 
@@ -166,11 +126,11 @@ a {
 }
 
 .default {
-  background-color: #51ddfc;
+  background-color: $default-color;
 }
 
 .error {
-  background-color: #e4757a;
+  background-color: $error-color;
 }
 
 .info {
@@ -182,7 +142,7 @@ a {
 }
 
 .warning {
-  background-color: #fd7856;
+  background-color: $warning-color;
 }
 
 
@@ -200,7 +160,7 @@ a {
   margin: 10px auto 0;
   border: none;
   padding: 10px;
-  border-bottom: 5px solid #58e1c1;
+  border-bottom: 5px solid $primary-color;
 }
 
 .hidden {
@@ -246,7 +206,7 @@ a {
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
-@media (min-width: 768px) {
+@media (min-width: $break-m) {
 
 .container {
   max-width: 1400px;

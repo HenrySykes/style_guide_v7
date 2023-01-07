@@ -14,21 +14,46 @@
   
   .default {
     background-color: $default-color;
+     &:hover {
+      transition: 
+      background-color .2s ease-in-out;
+      background-color: lighten($color: $default-color, $amount: 15%);
+     }
   }
   
   .error {
     background-color: $error-color;
+    &:hover {
+      transition: 
+      background-color .2s ease-in-out;
+      background-color: lighten($color: $error-color, $amount: 15%);
+       }  
   }
   
   .info {
     background-color: #927bc1;
+    &:hover {
+      transition: 
+      background-color .2s ease-in-out;
+      background-color: lighten($color: #927bc1, $amount: 15%);
+       }  
   }
   
   .success {
     background-color: #63cc82;
+    &:hover {
+      transition: 
+      background-color .2s ease-in-out;
+      background-color: lighten($color: #63cc82, $amount: 15%);
+       }  
   }
   
   .warning {
     background-color: $warning-color;
+    &:hover {
+      transition: 
+      background-color .2s ease-in-out;
+      background-color: lighten($color: $warning-color, $amount: 15%);
+       }  
   }
   
